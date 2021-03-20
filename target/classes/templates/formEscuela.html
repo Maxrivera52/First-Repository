@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	crossorigin="anonymous">
+<link
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+	<div class="container mt-3">
+		<div class="col-sm-6">
+			<form th:action="@{/save_esc}" th:object=${escuelas} method="POST">
+				<div class="card">
+					<div class="card-header">
+						<h3>Registro Usuarios</h3>
+					</div>
+					<div class="card-body">
+						<label>ID </label> 
+						<input th:field="*{id_escu}" type="text"class="form-control"> 
+						<label>NOMBRE</label> 
+						<input th:field="*{nombre}" type="text" class="form-control"> 
+						<label>DIRECCION</label>
+						<input th:field="*{direccion}" type="text" class="form-control">
+					</div>
+				</div>
+				<div class="card-footer"></div>
+				<input type="submit" value="Guardar" class="btn btn-success">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

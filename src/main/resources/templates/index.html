@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	crossorigin="anonymous">
+<link
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
+    rel="stylesheet"
+  />
+<link 
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet"
+>
+  <style>
+		thead {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<center><h1>MANTEMINIENTO DE TABLAS</h1></center>
+	<div class="container mt-4">
+	<table class="table">
+		<thead>
+			<tr>
+				<td><a th:href="@{/vistaUsuario}" class="btn btn-primary">VISTA USUARIOS</a></td>
+				<td><a th:href="@{/escuelas}" class="btn btn-primary">VISTA ESCUELAS</a></td>
+				<td><a th:href="@{/aulas}" class="btn btn-primary">VISTA AULAS</a></td>
+			</tr>
+		</thead>
+	</table>				
+	</div>
+</body>
+</html>
