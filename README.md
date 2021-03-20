@@ -13,4 +13,6 @@ You must make sure that the server.port and urldatabase on applications.properti
  
   Initialize XAMPP and MySQL server.
   Run the proyect as Spring Boot Application
+#The user are: idat
+#The password are: 123
 You are in!
