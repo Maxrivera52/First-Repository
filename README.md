@@ -5,9 +5,10 @@ This project was realized on STS Spring boot.
 To use this project you must have the next software:
 XAMPP (MySQL)
 SPRING STS
+Lombok on you STS
 
 Download this repository and extract in a folder.
-Create a MySQL Schema and import the database .sql.
+Create a MySQL Schema and import the database script sistema.sql in the repository.
 Then import the project from STS.
 You must make sure that the server.port and urldatabase on applications.properties of the project be the same what your MySQL port and MySQL schema.
  
